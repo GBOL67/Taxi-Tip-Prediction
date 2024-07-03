@@ -1,5 +1,5 @@
 <h1> Taxi-Tip-Prediction </h1>
-<p>The aim of this project was to predict taxi tips in New York City using machine learning models. By accurately predicting the tip amount and categorizing it into 'high', 'medium', and 'low', we aim to provide insights that could help taxi services enhance customer satisfaction and optimize tip-related strategies.The dataset used for this analysis is publicly available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).</p>
+<p>The aim of this project was to predict taxi tips in New York City using machine learning models. By accurately predicting the tip amount and categorizing it into 'high', 'medium', and 'low', we aim to provide insights that could help taxi services enhance customer satisfaction and optimize tip-related strategies.The dataset used for this analysis is publicly available (https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).</p>
 
 <h2> Data Understanding </h2>
 The dataset used was the TLC Yellow Taxi Trip Records of June 2019, publicly available from the Taxi & Limousine Commission (TLC), City of New York. The raw data included columns such as 'VendorID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime', 'passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag', 'PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount', and 'congestion_surcharge'.
@@ -39,10 +39,10 @@ Maximum amount value is  130.0
 <img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/density%20plot.PNG" align="center" width="700" height="600" />
 <p>Density Plot by the Decision Tree Regression model</p>
 <p><b>Logistic Regression:</b> The logistic regression model achieved an overall accuracy of 63% with varying performance across different tip categories. The F1-scores indicate that the model performs best for the 'high' tip category, with an F1-score of 0.74, followed by the 'low' category (0.65) and the 'medium' category the predicted tips falling into 'low', 'medium', or 'high' categories:y (0.47). This suggests that the model may struggle more with predicting 'medium' tips, which could be due to the overlapping nature of this category with the others.</p>
-<img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/log_classi.PNG" align="center" width="400" height="400" />
+<img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/log_classi.PNG" align="center" width="400" height="300" />
 <p>Classification Report by the Logistic model</p>
 <p><b>Random Forest:</b> The random forest model showed perfect performance with an accuracy, precision, recall, and F1-score of 1.00 across all categories. While this indicates an excellent fit to the training data, it raises concerns about overfitting. The model might not generalize well to new, unseen data, despite its high performance on the test set.</p>
-<img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/rand_classi.PNG" align="center" width="400" height="400" />
+<img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/rand_classi.PNG" align="center" width="400" height="300" />
 <p>Classification Report by the Random Forest model</p>
 <h2> Conclusion </h2>
 <p>The combination of regression trees for precise tip amount predictions and logistic regression for categorizing tips into low, medium, and high categories is a robust approach. It leverages the strengths of both model types, providing detailed numerical predictions and broad categorical insights. However, care must be taken to ensure models do not overfit and are validated on diverse datasets to ensure their reliability and applicability in real-world scenarios.</p>
