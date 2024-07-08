@@ -24,7 +24,7 @@ Maximum amount value is  130.0
 <p><b>Input:</b> Prepared dataset with cleaned and engineered features.</p>
 <p><b>Process:</b></p>
 <p>Two main types of models were developed:</p>
-<p><b>Decision Tree Regressor:</b>The model was trained to predict the exact tip amount. </p>
+<p><b>Regression Treer:</b>The model was trained to predict the exact tip amount. </p>
 <p><b>Classification Models:</b></p>
 <p><b>Logistic Regression and Random Forest Classifier:</b>A comparsion method was used to determine the probability of the predicted tips falling into 'low', 'medium', or 'high' categories.</p>
 <img src="https://github.com/GBOL67/Taxi-Tip-Prediction/blob/main/tips/logistic%20regression.PNG" align="center" width="700" height="600" />
